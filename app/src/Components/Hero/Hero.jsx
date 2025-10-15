@@ -1,6 +1,6 @@
 import '../../index.css'
 
-function Hero ({image, title, className}) {
+function Hero ({image, title}) {
   return (
     <div 
     className='hero-section'
