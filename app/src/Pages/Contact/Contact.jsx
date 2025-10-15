@@ -9,8 +9,10 @@ import Header from "../../Components/Header/Header.jsx";
 function Contact() {
   return (
     <>
-      <Header />
-      <Hero image={contactimage} title={"Contact Us"} />
+      <Hero 
+      image={contactimage} 
+      title={"Contact Us"} 
+      />
 
       <div className="contact-section">
         <div className="container">

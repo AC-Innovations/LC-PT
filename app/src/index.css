@@ -39,5 +39,39 @@ html {
   text-align: center;
   color: var(--secondary-color);
   font-size: var(--font-size-h1);
-  padding-top: 4em;
+  padding-top: 5em;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-between;
+    margin: 10em 0;
+}
+
+.blue {
+    background-color: var( --primary-color);
+    color: var(--secondary-color);
+    padding: 3em 5em;
+    height: 20em;
+    width: 47em;
+    margin-top: 5em;
+    border-radius: 1em;
+}
+
+.blue p {
+    font-size: var(--font-size-body);
+}
+
+.banner-img img {
+    border-radius: 1em;
+}
+
+.blue button {
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    background-color: var( --accent-color);
+    color: var(--secondary-color);
+    margin: 1em 0;
+    font-size: var(--font-size-body);
+    border: var(--secondary-color);
 }

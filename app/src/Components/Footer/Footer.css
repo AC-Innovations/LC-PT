@@ -14,10 +14,14 @@
     font-size: 25px;
 }
 
+.logo-bottom {
+    width: 140px;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
