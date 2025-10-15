@@ -22,3 +22,22 @@
 html {
   scroll-behavior: smooth;
 }
+
+.container {
+  margin: 10px 5%;
+}
+
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-section h1 {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: var(--font-size-h1);
+  padding-top: 4em;
+}

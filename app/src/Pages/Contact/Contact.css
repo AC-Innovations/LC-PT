@@ -1,0 +1,41 @@
+.contact-head h1 {
+    font-size: var(--font-size-h1);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.contact-2nd, .contact-1st {
+    display: flex;
+    justify-content: space-between;
+    margin: 5em 0;
+}
+
+.col-1 h1 {
+    font-size: var(--font-size-h1);
+}
+
+.contact-det h1 {
+    font-size: var(--font-size-h1);
+}
+
+.contact-det p {
+    font-size: var(--font-size-body);
+}
+
+.content {
+    margin: 3em 0;
+}
+
+.calendly {
+    background-color: var(--secondary-color);
+    border-radius: 1em;
+}
+
+.icons {
+    font-size: var(--font-size-label);
+    color: var(--accent-color);
+}
+
+.google-m {
+    
+}
