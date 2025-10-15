@@ -1,7 +1,12 @@
+import Header from "../../Components/Header/Header.jsx";
+
 function Services() {
   return (
-    <div>Services</div>
-  )
+    <>
+      <Header />
+      <div>Services</div>
+    </>
+  );
 }
 
-export default Services
+export default Services;
