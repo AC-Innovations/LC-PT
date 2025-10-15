@@ -6,6 +6,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.css";
+import logo from "../../assets/Photos/Logo.png";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
@@ -19,8 +20,8 @@ function Footer() {
 
       <div className="mid">
         <nav>
-          <img src="hi" alt="logo" className="logo-bottom" />
-          <ul className="menu">
+          <img src={logo} alt="logo" className="logo-bottom" />
+          <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
