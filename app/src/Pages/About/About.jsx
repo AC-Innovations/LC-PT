@@ -1,7 +1,12 @@
+import Header from "../../Components/Header/Header.jsx";
+
 function About() {
   return (
-    <div>About</div>
-  )
+    <>
+      <Header />
+      <div>About</div>
+    </>
+  );
 }
 
-export default About
+export default About;
