@@ -8,10 +8,10 @@
   --secondary-color: #d9d9d9;
   --accent-color: #ff4e01;
 
-  --font-size-h1: 64px;
-  --font-size-h2: 48px;
-  --font-size-label: 34px;
-  --font-size-body: 24px;
+  --font-size-h1: 50px;
+  --font-size-h2: 40px;
+  --font-size-label: 30px;
+  --font-size-body: 20px;
 }
 
 @font-face {
