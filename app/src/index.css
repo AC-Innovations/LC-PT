@@ -19,6 +19,22 @@
   src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+label {
+  font-size: var(--font-size-label);
+}
+
+body {
+  font-size: var(--font-size-body);
+}
+
 html {
   scroll-behavior: smooth;
 }

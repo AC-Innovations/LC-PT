@@ -1,17 +1,19 @@
-import '../../index.css'
-import Header from '../Header/Header'
+import "../../index.css";
+import Header from "../Header/Header";
 
-function Hero ({image, title}) {
+function Hero({ image, title }) {
   return (
-    <div 
-    className='hero-section'
-    style={{backgroundImage: `linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(${image})`}}
+    <div
+      className="hero-section"
+      style={{
+        backgroundImage: `linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(${image})`,
+      }}
     >
-      <Header/>
-    <h1>{title}</h1>
+      <Header />
+      <h1>{title}</h1>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
