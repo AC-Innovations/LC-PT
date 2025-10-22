@@ -182,37 +182,124 @@
   margin-right: 0%;
 }
 
-.reviews .wrapper {
+.reviews .carousel {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: 0;
+  position: relative;
+  width: 600px; /* ensure that the carousel is only a card-width wide. This prevents it from cramping the h2*/
 }
 
-.reviews .quote {
+.reviews .carousel .quote-wrapper {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto; /* create scrollable area */
+  overflow: hidden;
+  gap: 1em;
+
+  width: 100%; /* Fill the carousel area */
+}
+
+.reviews .carousel .quote-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .quote {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   color: white;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  flex-grow: 0; /* use flex-grow and flex-shrink to prevent the cards from shrinking or growing to fit the container. This allows the cards to keep their format. */
+  flex-shrink: 0;
 
   width: 600px;
   height: 300px;
   border-radius: 10px;
 }
 
-.reviews .star {
+.quote .star {
   margin: 5px;
 }
 
-.reviews .text {
+.quote .text {
   margin-right: 100px;
   margin-left: 100px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.reviews .author {
-  text-align: center;
+.carousel .slide-selector-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel .slide-selector {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: #a3a3a3;
+  margin-top: 10px;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+
+.carousel .slide-selector.active {
+  background-color: var(--primary-color);
+}
+
+.reviews .arrow-right,
+.arrow-left {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+  position: absolute;
+  top: 44%;
+}
+
+.reviews .arrow-right {
+  background: linear-gradient(
+      to left,
+      var(--primary-color) 50%,
+      var(--accent-color) 50%
+    )
+    right;
+  background-size: 200% 100%;
+  right: -4%;
+}
+
+.reviews .arrow-left {
+  background: linear-gradient(
+      to right,
+      var(--primary-color) 50%,
+      var(--accent-color) 50%
+    )
+    left;
+  background-size: 200% 100%;
+  left: -4%;
+}
+
+.reviews .arrow-right:hover {
+  background-position: left;
+  transition: 0.5s;
+}
+
+.reviews .arrow-left:hover {
+  background-position: right;
+  transition: 0.5s;
 }
