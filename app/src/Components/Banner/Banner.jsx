@@ -2,7 +2,7 @@ import './Banner.css'
 
 function Banner({text, btntext, image, imgalt}) {
   return (
-    <div className="info-card">
+    <div className="info-banner">
         <div className="blue">
             <p>{text}</p>
             <button>{btntext}</button>

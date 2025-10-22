@@ -143,7 +143,7 @@ function Services() {
 
 
   return (
-    <div>
+    <>
       <Hero
         title={'Our Services'}
         image={serviceimage}
@@ -208,7 +208,7 @@ function Services() {
       </div>
 
       <Footer/>
-    </div>
+    </>
   )
 }
 
