@@ -4,7 +4,6 @@ import Footer from "../../Components/Footer/Footer";
 import "./Contact.css";
 import Hero from "../../Components/Hero/Hero";
 import contactimage from "../../assets/Images/contact.jpg";
-import Header from "../../Components/Header/Header.jsx";
 
 function Contact() {
   return (
@@ -39,7 +38,7 @@ function Contact() {
 
             <div className="calendly">
               <div
-                class="calendly-inline-widget"
+                className="calendly-inline-widget"
                 data-url="https://calendly.com/andres-choque-ac-innovations"
                 style={{ width: "700px", height: "600px" }}
               ></div>

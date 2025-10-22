@@ -1,16 +1,16 @@
-.info-card {
+.info-banner {
     display: flex;
     justify-content: space-between;
     margin: 10em 0;
+    gap: 2em;
 }
 
 .blue {
     background-color: var( --primary-color);
     color: var(--secondary-color);
     padding: 3em 5em;
-    height: 20em;
+    height: 15.5em;
     width: 47em;
-    margin-top: 5em;
     border-radius: 1em;
 }
 
@@ -20,6 +20,8 @@
 
 .banner-img img {
     border-radius: 1em;
+    width: 90%;
+    
 }
 
 .blue button {

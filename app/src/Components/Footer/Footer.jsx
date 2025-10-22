@@ -19,8 +19,8 @@ function Footer() {
       </div>
 
       <div className="mid">
+        <img src={logo} alt="logo" className="logo-bottom" />
         <nav>
-          <img src={logo} alt="logo" className="logo-bottom" />
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -39,12 +39,12 @@ function Footer() {
         <div className="ct-info">
           <div className="ct-info-align">
             <FontAwesomeIcon icon={faPhone} className="icon" />
-            <p>208-746-0455</p>
+            <a href="tel:2087460455" className="ct-l">208-746-0455</a>
           </div>
           <br />
           <div className="ct-info-align">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <p>info@lcphysicaltherapy.com</p>
+            <a className="ct-l" href="info@lcphysicaltherapy.com">info@lcphysicaltherapy.com</a>
           </div>
         </div>
       </div>
@@ -53,7 +53,10 @@ function Footer() {
         <p>© 2025 All rights reserved.</p>
         <p>
           Website designed & built by{" "}
-          <a className="link" href="https://ac-innovations.io">
+          <a className="link" href="https://ac-innovations.io" 
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="AC Innovations Link">
             AC Innovations
           </a>{" "}
           - Your Tech Partner
