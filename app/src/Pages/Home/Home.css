@@ -270,6 +270,8 @@
   cursor: pointer;
   position: absolute;
   top: 44%;
+
+  user-select: none;
 }
 
 .reviews .arrow-right {
@@ -280,7 +282,7 @@
     )
     right;
   background-size: 200% 100%;
-  right: -4%;
+  right: -8%;
 }
 
 .reviews .arrow-left {
@@ -291,7 +293,7 @@
     )
     left;
   background-size: 200% 100%;
-  left: -4%;
+  left: -8%;
 }
 
 .reviews .arrow-right:hover {
