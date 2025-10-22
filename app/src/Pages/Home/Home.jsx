@@ -1,8 +1,11 @@
 import "./Home.css";
 import Header from "../../Components/Header/Header.jsx";
+import Banner from "../../Components/Banner/Banner.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 
 import groupPhoto from "../../assets/Photos/groupPhoto.png";
 import serviceCardImage from "../../assets/Photos/serviceCardImage.jpg";
+import bannerimage from "../../assets/Images/banner-small.jpg";
 import sloganImage from "../../assets/Photos/sloganImage.jpg";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,13 +26,20 @@ function Home() {
       }
     }
 
+    let scrollSlides = (index) => {
+      quoteArray[index].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    };
+
     let handleSlideSelector = () => {
       let btnIndex = Array.prototype.indexOf.call(
         selectorArray.children,
         button
       ); //get index of the button selector that was clicked
 
-      quoteArray[btnIndex].scrollIntoView({ behavior: "smooth" });
+      scrollSlides(btnIndex);
 
       button.classList.add("active"); //highlight current slide in slide selector
 
@@ -57,26 +67,21 @@ function Home() {
       if (button.classList.contains("arrow-right")) {
         if (currentSlide == selectorArray.children.length - 1) {
           //scroll the first index into view
-          quoteArray[0].scrollIntoView({ behavior: "smooth" });
+          scrollSlides(0);
           highlightSelector(0);
         } else {
           //scroll next
-          quoteArray[currentSlide + 1].scrollIntoView({ behavior: "smooth" });
+          scrollSlides(currentSlide + 1);
           highlightSelector(currentSlide + 1);
         }
       } else if (button.classList.contains("arrow-left")) {
         if (currentSlide == 0) {
           //scroll the last index into view
-          quoteArray[selectorArray.children.length - 1].scrollIntoView({
-            behavior: "smooth",
-          });
+          scrollSlides(selectorArray.children.length - 1);
           highlightSelector(selectorArray.children.length - 1);
         } else {
           //scroll next
-          quoteArray[currentSlide - 1].scrollIntoView({
-            behavior: "smooth",
-          });
-
+          scrollSlides(currentSlide - 1);
           highlightSelector(currentSlide - 1);
         }
       }
@@ -230,6 +235,15 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <Banner
+        text={"Let us help you get back to doing what you love."}
+        btntext={"Contact Us"}
+        image={bannerimage}
+        imgalt={"instructor helping patient"}
+      />
+
+      <Footer />
     </>
   );
 }
