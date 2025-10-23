@@ -12,6 +12,8 @@
   --font-size-h2: 40px;
   --font-size-label: 30px;
   --font-size-body: 20px;
+
+  --container-margin: 5%;
 }
 
 @font-face {
@@ -40,20 +42,5 @@ html {
 }
 
 .container {
-  margin: 10px 5%;
-}
-
-.hero-section {
-  min-height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-section h1 {
-  text-align: center;
-  color: var(--secondary-color);
-  font-size: var(--font-size-h1);
-  padding-top: 5em;
+  margin: 10px var(--container-margin);
 }
