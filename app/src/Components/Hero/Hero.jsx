@@ -1,7 +1,7 @@
-import "../../index.css";
+import "./Hero.css";
 import Header from "../Header/Header";
 
-function Hero({ image, title }) {
+function Hero({ image, title, enableCTA, titleCTA, labelCTA, buttonCTA }) {
   return (
     <div
       className="hero-section"
@@ -11,7 +11,15 @@ function Hero({ image, title }) {
       }}
     >
       <Header />
-      <h1>{title}</h1>
+      <h1 id="title" style={{ display: enableCTA ? "none" : "block" }}>
+        {title}
+      </h1>
+
+      <div id="heroCTA" style={{ display: enableCTA ? "block" : "none" }}>
+        <h1 id="titleCTA">{titleCTA}</h1>
+        <label>{labelCTA}</label>
+        <button className="primaryButton">{buttonCTA}</button>
+      </div>
     </div>
   );
 }
