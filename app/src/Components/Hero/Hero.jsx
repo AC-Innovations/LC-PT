@@ -6,7 +6,7 @@ function Hero({ image, title, enableCTA, titleCTA, labelCTA, buttonCTA }) {
     <div
       className="hero-section"
       style={{
-        backgroundImage: `linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        backgroundImage: `linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
     url(${image})`,
       }}
     >

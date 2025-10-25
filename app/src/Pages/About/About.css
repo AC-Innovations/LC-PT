@@ -1,0 +1,143 @@
+/* --------- Section CSS ------------ */
+
+/* Who We Are Section */
+
+.who-we-are {
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.who-we-are .text-container {
+  flex: 1;
+  margin-right: 6em;
+}
+
+.who-we-are .text-container h2 {
+  margin-bottom: 1em;
+}
+
+.who-we-are .text-container p {
+  font-size: 27px;
+  padding-right: 3em;
+}
+
+.bento-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1em;
+
+  --bento-container-size: 90%;
+}
+
+.bento-container .row1 img {
+  max-width: var(--bento-container-size);
+  height: 100%;
+  border-radius: 30px;
+}
+
+.bento-container .row2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.bento-container .row1 {
+  display: flex;
+  justify-content: left;
+  flex: 1;
+}
+
+.bento-container .row2 {
+  display: flex;
+  gap: 1em;
+  width: var(--bento-container-size);
+}
+
+.bento-container .row2 .column1 {
+  display: flex;
+  flex: 1;
+  justify-content: left;
+}
+
+.bento-container .row2 .column2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.bento-container .row2 .column3 {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+
+/* Meet the Team Section */
+
+.meet-the-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  /* ensure full width of section is colored, yet content has gutters */
+  margin-right: calc(var(--container-margin) * -1 - 0.56%);
+  margin-left: calc(var(--container-margin) * -1 - 0.56%);
+  padding-right: calc(var(--container-margin) + 0.56%);
+  padding-left: calc(var(--container-margin) + 0.56%);
+}
+
+.meet-the-team .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+  margin-bottom: 4em;
+}
+
+.meet-the-team .accent-bar {
+  background-color: var(--accent-color);
+  width: 15em;
+  height: 4px;
+}
+
+.meet-the-team .team-container {
+  display: grid;
+  justify-content: center;
+
+  grid-column-gap: 8rem;
+  grid-row-gap: 6.625rem;
+
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 20%);
+
+  grid-auto-columns: 1fr;
+
+  margin-bottom: 50px;
+}
+
+/* Assistants Section */
+.assistants .assistants-container {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  background-color: white;
+}
+
+.assistants .assistants-container .image-container {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+
+.assistants .assistants-container h1 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
