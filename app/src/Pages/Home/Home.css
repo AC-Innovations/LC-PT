@@ -41,9 +41,9 @@
 
 /* Services Section */
 
-/* .services {
-  padding: 40px;
-} */
+.services {
+  padding-top: 20px;
+}
 
 .services button {
   display: block;
