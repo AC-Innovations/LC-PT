@@ -106,12 +106,13 @@
 
 .meet-the-team .team-container {
   display: grid;
+  justify-content: center;
 
   grid-column-gap: 8rem;
   grid-row-gap: 6.625rem;
 
   grid-template-rows: auto;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(3, 20%);
 
   grid-auto-columns: 1fr;
 

@@ -1,5 +1,7 @@
 .team-member img {
   /* Note: the original image being used must have a 1:1 aspect ratio */
+  aspect-ratio: 205/205;
+
   background-image: linear-gradient(
     180deg,
     #73737300 30%,
