@@ -1,8 +1,17 @@
+.banner-background {
+  padding: 3em 0;
+
+  margin-right: calc(var(--container-margin) * -1 - 0.56%);
+  margin-left: calc(var(--container-margin) * -1 - 0.56%);
+  padding-right: calc(var(--container-margin) + 0.56%);
+  padding-left: calc(var(--container-margin) + 0.56%);
+}
+
 .info-banner {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin: 5em 3em;
+  margin: 0em 3em;
   gap: 2em;
 }
 

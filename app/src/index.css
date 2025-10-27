@@ -42,5 +42,5 @@ html {
 }
 
 .container {
-  margin: 10px var(--container-margin);
+  margin: 0px var(--container-margin);
 }
