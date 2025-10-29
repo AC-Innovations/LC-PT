@@ -19,7 +19,6 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   will-change: transform;
-  padding: 10px 5%;
 }
 
 .hd.in-hero {
@@ -54,6 +53,7 @@
   backdrop-filter: saturate(140%) blur(10px);
   -webkit-backdrop-filter: saturate(140%) blur(10px);
   box-shadow: 0 8px 22px rgba(0,0,0,0.16);
+  padding: 10px 5%;
 }
 
 .wrapper nav {
