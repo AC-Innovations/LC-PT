@@ -41,6 +41,26 @@ html {
   scroll-behavior: smooth;
 }
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--font-size-body);
+    position: relative;
+}
+
 .container {
   margin: 0px var(--container-margin);
 }
