@@ -2,7 +2,7 @@
   display: flex;
   gap: 5em;
   justify-content: center;
-  margin: 5em 0;
+  margin: 2em 0;
   border: 2px solid var(--secondary-color);
   border-radius: 1em;
   padding: 1em;
@@ -24,6 +24,7 @@
 .inj-det h1 {
   font-size: var(--font-size-h1);
   text-align: center;
+  margin: 1.5em 0;
 }
 
 .inj-boxes {
@@ -31,7 +32,6 @@
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   place-items: center;
   grid-gap: 2em;
-  margin: 5em 0;
 }
 
 .box {
@@ -72,12 +72,13 @@
   border-radius: 1em;
   border: 2px solid var(--secondary-color);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-  margin: 5em 0;
+  margin: 5em 0 3em 0;
 }
 
 .text h1 {
   font-size: var(--font-size-h1);
   text-align: center;
+  margin: 1em 0 0.1em 0;
 }
 
 .text hr {
