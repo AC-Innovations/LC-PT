@@ -48,13 +48,21 @@
   border-radius: 1em;
 }
 
+.blue a {
+  text-decoration: none;
+  margin: 1em 0 0;
+}
+
 .blue button {
   padding: 0.5em 2em;
   border-radius: 1em;
   background-color: var(--accent-color);
   color: var(--secondary-color);
-  margin: 1em 0 0;
   font-size: var(--font-size-body);
   border: var(--secondary-color);
   color: white;
+}
+
+.blue button:hover {
+  cursor: pointer;
 }

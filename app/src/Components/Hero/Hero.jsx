@@ -1,5 +1,6 @@
 import "./Hero.css";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 function Hero({ image, title, enableCTA, titleCTA, labelCTA, buttonCTA }) {
   return (
@@ -18,7 +19,9 @@ function Hero({ image, title, enableCTA, titleCTA, labelCTA, buttonCTA }) {
       <div id="heroCTA" style={{ display: enableCTA ? "block" : "none" }}>
         <h1 id="titleCTA">{titleCTA}</h1>
         <label>{labelCTA}</label>
-        <button className="primaryButton">{buttonCTA}</button>
+        <Link to="/Contact">
+          <button className="primaryButton">{buttonCTA}</button>
+        </Link>
       </div>
     </div>
   );

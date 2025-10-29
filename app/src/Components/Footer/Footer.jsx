@@ -23,28 +23,60 @@ function Footer() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                onClick={() =>
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+                }
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link
+                to="/about"
+                onClick={() =>
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+                }
+              >
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link
+                to="/services"
+                onClick={() =>
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+                }
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link
+                to="/contact"
+                onClick={() =>
+                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+                }
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
         <div className="ct-info">
           <div className="ct-info-align">
             <FontAwesomeIcon icon={faPhone} className="icon" />
-            <a href="tel:2087460455" className="ct-l">208-746-0455</a>
+            <a href="tel:2087460455" className="ct-l">
+              208-746-0455
+            </a>
           </div>
           <br />
           <div className="ct-info-align">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <a className="ct-l" href="info@lcphysicaltherapy.com">info@lcphysicaltherapy.com</a>
+            <a className="ct-l" href="info@lcphysicaltherapy.com">
+              info@lcphysicaltherapy.com
+            </a>
           </div>
         </div>
       </div>
@@ -53,10 +85,13 @@ function Footer() {
         <p>© 2025 All rights reserved.</p>
         <p>
           Website designed & built by{" "}
-          <a className="link" href="https://ac-innovations.io" 
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="AC Innovations Link">
+          <a
+            className="link"
+            href="https://ac-innovations.io"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="AC Innovations Link"
+          >
             AC Innovations
           </a>{" "}
           - Your Tech Partner

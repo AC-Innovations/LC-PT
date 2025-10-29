@@ -12,6 +12,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -137,36 +138,67 @@ function Home() {
         <section className="services">
           <h1>Our Services</h1>
           <div className="wrapper">
-            <div className="services-card">
+            <Link
+              to="/Services"
+              className="services-card"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+              }
+            >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
                 <p>Back & Neck Dysfunction</p>
                 <div className="accent-bar"></div>
               </div>
-            </div>
-            <div className="services-card">
+            </Link>
+            <Link
+              to="/Services"
+              className="services-card"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+              }
+            >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
                 <p>Balance Training & Vestibular</p>
                 <div className="accent-bar"></div>
               </div>
-            </div>
-            <div className="services-card">
+            </Link>
+            <Link
+              to="/Services"
+              className="services-card"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+              }
+            >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
                 <p>Orthopedic Injury</p>
                 <div className="accent-bar"></div>
               </div>
-            </div>
-            <div className="services-card">
+            </Link>
+            <Link
+              to="/Services"
+              className="services-card"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+              }
+            >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
                 <p>Neuromuscular Training</p>
                 <div className="accent-bar"></div>
               </div>
-            </div>
+            </Link>
           </div>
-          <button className="secondaryButton">View all services</button>
+          <Link
+            to="/Services"
+            onClick={() =>
+              window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+            }
+          >
+            <button className="secondaryButton">View all services</button>
+          </Link>
         </section>
         <section className="slogan">
           <h1>We help you get back to doing what you love.</h1>

@@ -1,95 +1,94 @@
 .inj-menu {
-    display: flex;
-    gap: 5em;
-    justify-content: center;
-    margin: 5em 0;
-    border: 2px solid var(--secondary-color);
-    border-radius: 1em;
-    padding: 1em;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+  margin: 2em 0;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1em;
+  padding: 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .inj-menu label {
-    font-size: var(--font-size-label);
-    color: #919191;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  font-size: var(--font-size-label);
+  color: #919191;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .inj-menu label.active {
-    color: var(--accent-color);
-    font-weight: 600;
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 .inj-det h1 {
-    font-size: var(--font-size-h1);
-    text-align: center;
+  font-size: var(--font-size-h1);
+  text-align: center;
+  margin: 1.5em 0;
 }
 
 .inj-boxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    place-items: center;
-    grid-gap: 2em;
-    margin: 5em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  place-items: center;
+  grid-gap: 2em;
 }
 
 .box {
-    width: 500px;
-    height: 400px;
-    padding: 1em 2em;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    border-radius: 1em;
-    cursor: pointer;
-    transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+  width: 500px;
+  height: 400px;
+  padding: 1em 2em;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 1em;
+  transition: background-color 500ms, transform 500ms, box-shadow 500ms;
 }
 
 .box:hover {
-    transform: translateY(-6px);
-    box-shadow: 6px 6px 0 var(--accent-color);
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 0 var(--accent-color);
 }
 
 .box hr {
-    width: 80%;
-    height: 0.2em;
-    background-color: var(--accent-color);
-    border: var(--accent-color);
+  width: 80%;
+  height: 0.2em;
+  background-color: var(--accent-color);
+  border: var(--accent-color);
 }
 
 .box label {
-    font-size: var(--font-size-label);
+  font-size: var(--font-size-label);
 }
 
 .box p {
-    font-size: var(--font-size-body);
+  font-size: var(--font-size-body);
 }
 
 .box-txt {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
-
 .partners {
-    border-radius: 1em;
-    border: 2px solid var(--secondary-color);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 5em 0;
+  border-radius: 1em;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 5em 0 3em 0;
 }
 
 .text h1 {
-    font-size: var(--font-size-h1);
-    text-align: center;
+  font-size: var(--font-size-h1);
+  text-align: center;
+  margin: 1em 0 0.1em 0;
 }
 
 .text hr {
-    width: 15%;
-    height: 0.3em;
-    background-color: var(--accent-color);
-    border: var(--accent-color);
-    margin: auto;
+  width: 15%;
+  height: 0.3em;
+  background-color: var(--accent-color);
+  border: var(--accent-color);
+  margin: auto;
 }
 
 .boxes img {
-    margin: 5em;
+  margin: 5em;
 }

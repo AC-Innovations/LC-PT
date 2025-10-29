@@ -37,6 +37,10 @@
   transition: 0.7s;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* --------- Section CSS ------------ */
 
 /* Services Section */
@@ -77,6 +81,12 @@
 
   display: flex;
   flex-direction: column;
+  transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.services .services-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 0 var(--accent-color);
 }
 
 .services .services-card img {
