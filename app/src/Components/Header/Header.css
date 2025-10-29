@@ -1,99 +1,68 @@
 .navbar {
-  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 1em;
-  /* flex-direction: row; */
-  /* position: fixed; */
-  /* z-index: 1; */
 }
 
-/* /* .logo {
-  display: flex;
-  justify-content: space-between;
-} */
-/*
-.navbar img {
-  
-  width: 180px;
-  height: auto;
-  margin: 20px;
+.logo-p {
+  width: 150px;
 }
 
-.navbar .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.hd {
   width: 100%;
-  margin-top: 40px;
-  margin-right: 20px;
+  transition:
+    transform 320ms cubic-bezier(.2,.9,.2,1),
+    background-color 320ms ease,
+    backdrop-filter 320ms ease,
+    box-shadow 320ms ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
-.menu {
-  display: flex;
-  padding: 5px 30px;
-  align-items: center;
-  flex-direction: row;
-  list-style: none;
-
-  background-color: #47474780;
-  border-radius: 10px;
+.hd.in-hero {
+  position: static;
+  transform: translateY(0);
+  background-color: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  pointer-events: auto;
 }
 
-.menu a {
-  color: rgb(255, 255, 255);
-
-  font-size: var(--font-size-body);
-  text-decoration: none;
+.hd.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
-.menu li {
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  border-radius: 10px;
+.hd.fixed.show {
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
-.menu li:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-  transition: 0.4s;
+.hd.fixed.hide {
+  transform: translateY(-100%);
+  pointer-events: none;
 }
 
-.menu:hover li:not(:hover) {
-  background-color: rgb(0, 0, 0, 0);
-  transition: 0.4s;
+.hd.fixed.blur {
+  background-color: rgba(0, 0, 0, 0.35); 
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.16);
+  padding: 10px 5%;
 }
 
-li.active {
-  background-color: rgb(255, 255, 255, 0.2);
-  transition: 0.6s;
-} */
-
-nav {
-    display: flex;
-    align-items: center;
+.wrapper nav {
     justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
 }
 
 .wrapper nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: var(--font-size-body);
-    position: relative;
     transition: 0.6s;
 }
-
 
 .wrapper ul {
     padding: 5px 30px;
