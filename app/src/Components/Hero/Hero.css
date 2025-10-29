@@ -12,7 +12,7 @@
   text-align: center;
   color: white;
   font-size: var(--font-size-h1);
-  padding-top: 50vh;
+  padding-top: 3em;
 }
 
 .hero-section #heroCTA {
@@ -24,7 +24,7 @@
   color: white;
   text-align: left;
   margin-bottom: 0.1em;
-  padding-top: 60vh;
+  padding-top: 5em;
 }
 
 .hero-section #heroCTA label {
