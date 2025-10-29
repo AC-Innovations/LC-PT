@@ -74,7 +74,7 @@ function Footer() {
           <br />
           <div className="ct-info-align">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
-            <a className="ct-l" href="info@lcphysicaltherapy.com">
+            <a className="ct-l" href="mailto:info@lcphysicaltherapy.com">
               info@lcphysicaltherapy.com
             </a>
           </div>

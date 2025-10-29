@@ -49,9 +49,13 @@ a {
   padding-top: 20px;
 }
 
-.services button {
-  display: block;
-  margin: 20px auto;
+.services #button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.services #button-wrapper a {
+  margin: 30px;
 }
 
 .services h1 {
