@@ -1,7 +1,7 @@
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 function Banner({ text, btntext, image, imgalt, enableBackground, bgColor }) {
-  console.log(bgColor);
   return (
     <div
       className="banner-background"
@@ -12,7 +12,14 @@ function Banner({ text, btntext, image, imgalt, enableBackground, bgColor }) {
       <div className="info-banner">
         <div className="blue">
           <label>{text}</label>
-          <button>{btntext}</button>
+          <Link
+            to="/Contact"
+            onClick={() =>
+              window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+            }
+          >
+            <button>{btntext}</button>
+          </Link>
         </div>
         <div className="banner-img">
           <img src={image} alt={imgalt} />

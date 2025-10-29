@@ -74,50 +74,49 @@ li.active {
 } */
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
 .wrapper nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: var(--font-size-body);
-    position: relative;
-    transition: 0.6s;
+  color: white;
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  position: relative;
+  transition: 0.6s;
 }
 
-
 .wrapper ul {
-    padding: 5px 30px;
-    border-radius: 10px;
-    background-color: #47474780;
-    backdrop-filter: blur(40px);
-    
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: #47474780;
+  backdrop-filter: blur(40px);
 }
 
 .wrapper ul a {
-    padding: 10px;
-    border-radius: 5px;
-    transition: color 0.3s, background-color 0.3s, filter 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s, filter 0.3s;
 }
 
-.wrapper ul a:hover, .wrapper ul a.active {
-    background-color: rgb(255, 255, 255, 0.2);
-    padding: 10px 15px;
+.wrapper ul a:hover,
+.wrapper ul a.active {
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 10px 15px;
 }
 
 .wrapper ul li:hover a {
-    filter: none; 
+  filter: none;
 }
 
 .wrapper ul li:hover ~ li a {
-    filter: blur(2px);
+  filter: blur(2px);
 }
