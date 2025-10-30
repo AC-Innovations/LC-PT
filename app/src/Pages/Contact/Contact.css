@@ -4,16 +4,16 @@
   text-align: center;
 }
 
-/* .contact-2nd, */
+.contact-2nd,
 .contact-1st {
   display: flex;
   justify-content: space-between;
   margin: 5em 0;
 }
 
-/* .col-1 h1 {
+.col-1 h1 {
   font-size: var(--font-size-h1);
-} */
+}
 
 .contact-det h1 {
   font-size: var(--font-size-h1);
@@ -37,12 +37,115 @@
   text-decoration-color: var(--accent-color);
 }
 
-.google-m-container {
-  background-color: var(--secondary-color);
-  border-radius: 1em;
-}
-
 .icons {
   font-size: var(--font-size-label);
   color: var(--accent-color);
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1rem;
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  font-size: var(--font-size-body);
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: var(--font-size-body);
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1.2rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 20px 5px;
+  border-radius: 0.375rem;
+  border-style: none;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.form-submit .submit-success,
+.submit-message {
+  transition: top 0.7s;
+}
+
+.form-submit .submit-message {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.form-submit .submit-success {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+.form-submit .submit-success.active {
+  top: 25%;
+}
+
+.form-submit .submit-message.active {
+  top: -100%;
 }
