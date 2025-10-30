@@ -1,7 +1,6 @@
 {
   "name": "app",
   "private": true,
-  "homepage": "https://ac-innovations.github.io/LC-PT/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +8,6 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
