@@ -1,18 +1,16 @@
 import "./Home.css";
-import Header from "../../Components/Header/Header.jsx";
 import Banner from "../../Components/Banner/Banner.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import Hero from "../../Components/Hero/Hero.jsx";
-
 import groupPhoto from "../../assets/Photos/groupPhoto.png";
 import serviceCardImage from "../../assets/Photos/serviceCardImage.jpg";
 import bannerimage from "../../assets/Images/banner-small.jpg";
 import sloganImage from "../../assets/Photos/sloganImage.jpg";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { scrollToTop } from '../../Utils/ScrolltoTop'
 
 function Home() {
   useEffect(() => {
@@ -141,9 +139,7 @@ function Home() {
             <Link
               to="/Services"
               className="services-card"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-              }
+              onClick={scrollToTop}
             >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
@@ -154,9 +150,7 @@ function Home() {
             <Link
               to="/Services"
               className="services-card"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-              }
+              onClick={scrollToTop}
             >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
@@ -167,9 +161,7 @@ function Home() {
             <Link
               to="/Services"
               className="services-card"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-              }
+              onClick={scrollToTop}
             >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">
@@ -180,9 +172,7 @@ function Home() {
             <Link
               to="/Services"
               className="services-card"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-              }
+              onClick={scrollToTop}
             >
               <img src={serviceCardImage} alt="physical therapy image"></img>
               <div className="label-wrapper">

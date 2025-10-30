@@ -2,98 +2,58 @@ import "./Header.css";
 import logo from "../../assets/Photos/Logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
+import { scrollToTop } from '../../Utils/ScrolltoTop'
 
 function Header() {
   const location = useLocation();
   const headerRef = useRef(null);
-  const lastScrollY = useRef(typeof window !== "undefined" ? window.pageYOffset : 0);
-  const ticking = useRef(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [visible, setVisible] = useState(true); 
+  const [visible, setVisible] = useState(true);
   const [headerHeight, setHeaderHeight] = useState(0);
+  const lastScrollY = useRef(0);
+  const SCROLL_DELTA = 50;
 
   useEffect(() => {
-    const heroEl = document.querySelector(".hero-section");
-    if (!headerRef.current) return;
+    if (headerRef.current) setHeaderHeight(headerRef.current.offsetHeight);
 
-    const computeHeroBottom = () => {
-      if (!heroEl) return 0;
-      const rect = heroEl.getBoundingClientRect();
-      return rect.top + window.pageYOffset + rect.height;
-    };
+    const handleScroll = () => {
+      const currentY = window.scrollY;
 
-    const updateHeaderHeight = () => {
-      if (headerRef.current) setHeaderHeight(headerRef.current.offsetHeight);
-    };
-    updateHeaderHeight();
+      setIsFixed(currentY > 0); // sticky when scrolled
 
-    let heroBottom = computeHeroBottom();
+      if (Math.abs(currentY - lastScrollY.current) < SCROLL_DELTA) return;
 
-    const DELTA = 5;
-
-    const handleUpdate = () => {
-      const currentY = window.pageYOffset;
-
-      heroBottom = computeHeroBottom();
-
-      const nowInsideHero = currentY + 0 < heroBottom;
-
-      if (nowInsideHero) {
-        if (isFixed) setIsFixed(false);
-        if (!visible) setVisible(true);
-        lastScrollY.current = currentY;
-        ticking.current = false;
-        return;
-      }
-
-      if (!isFixed) setIsFixed(true);
-
-      const diff = currentY - lastScrollY.current;
-      if (Math.abs(diff) < DELTA) {
-        ticking.current = false;
-        return;
-      }
-
-      if (diff > 0) {
-        setVisible(false);
-      } else {
-        setVisible(true);
+      if (currentY < 50) {
+        setVisible(true); // always visible near top
+      } else if (currentY > lastScrollY.current + SCROLL_DELTA) {
+        setVisible(false); // scrolling down
+      } else if (currentY < lastScrollY.current - SCROLL_DELTA) {
+        setVisible(true); // scrolling up
       }
 
       lastScrollY.current = currentY;
-      ticking.current = false;
     };
 
-    const onScroll = () => {
-      if (!ticking.current) {
-        ticking.current = true;
-        requestAnimationFrame(handleUpdate);
-      }
-    };
-
-    const onResize = () => {
-      heroBottom = computeHeroBottom();
-      updateHeaderHeight();
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onResize);
-    updateHeaderHeight();
-    heroBottom = computeHeroBottom();
-    lastScrollY.current = window.pageYOffset;
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", () => {
+      if (headerRef.current) setHeaderHeight(headerRef.current.offsetHeight);
+    });
 
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", () => {});
     };
-  }, [isFixed, visible]);
+  }, []);
 
   const classes = [
-    "hd", "navbar",
+    "hd",
+    "navbar",
     isFixed ? "fixed" : "in-hero",
-    isFixed ? (visible ? "show" : "hide") : "", 
-    isFixed && visible ? "blur" : ""
-  ].join(" ").trim();
+    visible && isFixed ? "blur" : "",
+    visible ? "show" : "hide"
+  ]
+    .join(" ")
+    .trim();
 
   return (
     <>
@@ -109,16 +69,16 @@ function Header() {
           <nav>
             <ul className="menu">
             <li>
-              <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
+              <Link to="/" className={location.pathname === '/' ? 'active' : ''} onClick={scrollToTop}>Home</Link>
             </li>
             <li>
-              <Link to="/About" className={location.pathname === '/About' ? 'active' : ''}>About</Link>
+              <Link to="/About" className={location.pathname === '/About' ? 'active' : ''} onClick={scrollToTop}>About</Link>
             </li>
             <li>
-              <Link to="/Services" className={location.pathname === '/Services' ? 'active' : ''}>Services</Link>
+              <Link to="/Services" className={location.pathname === '/Services' ? 'active' : ''} onClick={scrollToTop}>Services</Link>
             </li>
             <li>
-              <Link to="/Contact" className={location.pathname === '/Contact' ? 'active' : ''}>Contact</Link>
+              <Link to="/Contact" className={location.pathname === '/Contact' ? 'active' : ''} onClick={scrollToTop}>Contact</Link>
             </li>
           </ul>
           </nav>
@@ -126,13 +86,7 @@ function Header() {
         </div>
       </section>
 
-      <div
-        aria-hidden="true"
-        style={{
-          height: isFixed ? headerHeight : 0,
-          transition: "height 500ms ease"
-        }}
-      />
+      <div aria-hidden="true" style={{ height: headerHeight }} />
     </>
   );
 }
