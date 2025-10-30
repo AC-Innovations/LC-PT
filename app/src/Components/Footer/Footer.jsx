@@ -8,6 +8,7 @@ import {
 import "./Footer.css";
 import logo from "../../assets/Photos/Logo.png";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { scrollToTop } from "../../Utils/ScrolltoTop";
 
 function Footer() {
   return (
@@ -25,9 +26,7 @@ function Footer() {
             <li>
               <Link
                 to="/"
-                onClick={() =>
-                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-                }
+                onClick={scrollToTop}
               >
                 Home
               </Link>
@@ -35,9 +34,7 @@ function Footer() {
             <li>
               <Link
                 to="/about"
-                onClick={() =>
-                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-                }
+                onClick={scrollToTop}
               >
                 About
               </Link>
@@ -45,9 +42,7 @@ function Footer() {
             <li>
               <Link
                 to="/services"
-                onClick={() =>
-                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-                }
+                onClick={scrollToTop}
               >
                 Services
               </Link>
@@ -55,9 +50,7 @@ function Footer() {
             <li>
               <Link
                 to="/contact"
-                onClick={() =>
-                  window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-                }
+                onClick={scrollToTop}
               >
                 Contact
               </Link>
