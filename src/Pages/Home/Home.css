@@ -1,16 +1,4 @@
 /* --------- Page wide variables ---------- */
-.primaryButton {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  border-radius: 10px;
-  font-size: var(--font-size-body);
-  border-style: none;
-}
-.primaryButton:hover {
-  cursor: pointer;
-  opacity: 0.9;
-}
-
 .secondaryButton {
   background: linear-gradient(
       to left,

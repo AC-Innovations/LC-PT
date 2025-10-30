@@ -62,17 +62,17 @@ function Contact() {
     Create Access Key here 👉 https://web3forms.com/
  --> */}
 
-            <div class="contact-form-container">
-              <div class="contact-intro">
-                <h2 class="contact-title">Get in Touch</h2>
-                <p class="contact-description">
+            <div className="contact-form-container">
+              <div className="contact-intro">
+                <h2 className="contact-title">Get in Touch</h2>
+                <p className="contact-description">
                   Fill out the form below and we'll get back to you as soon as
                   possible.
                 </p>
               </div>
 
               <form
-                class="contact-form"
+                className="contact-form"
                 action="https://api.web3forms.com/submit"
                 method="POST"
               >
@@ -89,49 +89,49 @@ function Contact() {
                 <input type="hidden" name="from_name" value="My Website" />
                 {/* <!-- More customization options available in the docs: https://docs.web3forms.com --> */}
 
-                <div class="form-group-container">
-                  <div class="form-group">
-                    <label for="name" class="form-label">
+                <div className="form-group-container">
+                  <div className="form-group">
+                    <label htmlFor="name" className="form-label">
                       Name
                     </label>
                     <input
                       id="name"
                       name="name"
-                      class="form-input"
+                      className="form-input"
                       placeholder="Your name"
                       type="text"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="email" class="form-label">
+                  <div className="form-group">
+                    <label htmlFor="email" className="form-label">
                       Email
                     </label>
                     <input
                       id="email"
                       name="email"
-                      class="form-input"
+                      className="form-input"
                       placeholder="Your email"
                       type="email"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="phone" class="form-label">
+                  <div className="form-group">
+                    <label htmlFor="phone" className="form-label">
                       Phone
                     </label>
                     <input
                       id="phone"
                       name="phone"
-                      class="form-input"
+                      className="form-input"
                       placeholder="+1 (234) 56789"
                       type="text"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="message" class="form-label">
+                  <div className="form-group">
+                    <label htmlFor="message" className="form-label">
                       Message
                     </label>
                     <textarea
-                      class="form-textarea"
+                      className="form-textarea"
                       id="message"
                       name="message"
                       placeholder="Your message"
@@ -139,7 +139,7 @@ function Contact() {
                   </div>
                 </div>
                 <button
-                  class="form-submit"
+                  className="form-submit"
                   type="submit"
                   onClick={(e) => {
                     e.preventDefault();
