@@ -191,14 +191,16 @@ function Home() {
               </div>
             </Link>
           </div>
-          <Link
-            to="/Services"
-            onClick={() =>
-              window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-            }
-          >
-            <button className="secondaryButton">View all services</button>
-          </Link>
+          <div id="button-wrapper">
+            <Link
+              to="/Services"
+              onClick={() =>
+                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+              }
+            >
+              <button className="secondaryButton">View all services</button>
+            </Link>
+          </div>
         </section>
         <section className="slogan">
           <h1>We help you get back to doing what you love.</h1>
@@ -379,11 +381,11 @@ function Home() {
               </div>
               <div id="weekly-hours-container">
                 <p className="active">Closed</p>
-                <p>6 AM-5 PM</p>
-                <p>7 AM-5 PM</p>
-                <p>6:30 AM-5 PM</p>
-                <p>7 AM-5 PM</p>
-                <p>6 AM-12 PM</p>
+                <p>6&nbsp;AM&#8209;5&nbsp;PM</p>
+                <p>7&nbsp;AM&#8209;5&nbsp;PM</p>
+                <p>6:30&nbsp;AM&#8209;5&nbsp;PM</p>
+                <p>7&nbsp;AM&#8209;5&nbsp;PM</p>
+                <p>6&nbsp;AM&#8209;12&nbsp;PM</p>
                 <p>Closed</p>
               </div>
             </div>
