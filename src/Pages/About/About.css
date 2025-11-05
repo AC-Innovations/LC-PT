@@ -141,3 +141,12 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Media Queries */
+
+/* Slogan Section */
+@media (min-width: 1650px) {
+  .wide-screen-break {
+    display: none;
+  }
+}

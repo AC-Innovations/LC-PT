@@ -10,22 +10,22 @@ import { useState } from "react";
 function Services() {
   const injuryData = {
     back: {
-      title: "Back Injuries",
+      title: "Back injuries",
       items: [
         {
-          name: "Herniated Disk",
+          name: "Herniated Disc",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Fractured Vertebrae",
+          name: "Fractured vertebrae",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Spinal Stenosis",
+          name: "Spinal stenosis",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
@@ -39,28 +39,28 @@ function Services() {
       ],
     },
     foot_ankle: {
-      title: "Foot & Ankle",
+      title: "Foot & ankle",
       items: [
         {
-          name: "Plantar Fasciitis",
+          name: "Plantar fasciitis",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Metatarsal Fractures",
+          name: "Metatarsal fractures",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Stress Fractures",
+          name: "Stress fractures",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Heel Spurs",
+          name: "Heel spurs",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
@@ -71,25 +71,25 @@ function Services() {
       title: "Knee",
       items: [
         {
-          name: "ACL Tears",
+          name: "ACL tears",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "PCL Tears",
+          name: "PCL tears",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "LCL Tears",
+          name: "LCL tears",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Meniscus Tears",
+          name: "Meniscus tears",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
@@ -129,7 +129,7 @@ function Services() {
       title: "Neck",
       items: [
         {
-          name: "Cervical Whiplash",
+          name: "Cervical whiplash",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
@@ -141,13 +141,13 @@ function Services() {
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Spinal Cord Injuries",
+          name: "Spinal cord injuries",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
         },
         {
-          name: "Cervical Stenosis",
+          name: "Cervical stenosis",
           what: "The soft inner core of a spinal disc bulges out, irritating nearby nerves.",
           focus:
             "Core stabilization, traction therapy, posture training, nerve gliding exercises.",
@@ -194,7 +194,7 @@ function Services() {
                       <p>{item.what}</p>
                       <br />
                       <p>
-                        <strong>PT Focus</strong>
+                        <strong>PT focus</strong>
                       </p>
                       <p>{item.focus}</p>
                     </div>
@@ -217,7 +217,7 @@ function Services() {
 
           <Banner
             text={"Let us help you get back to doing what you love."}
-            btntext={"Contact Us"}
+            btntext={"Contact us"}
             image={bannerimage}
             imgalt={"instructor helping patient"}
           />

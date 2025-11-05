@@ -65,45 +65,6 @@ a {
   margin: 20px 0px 20px 20px;
 }
 
-.services .services-card {
-  margin: 20px;
-  width: 285px;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-
-  display: flex;
-  flex-direction: column;
-  transition: background-color 500ms, transform 500ms, box-shadow 500ms;
-}
-
-.services .services-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 6px 6px 0 var(--accent-color);
-}
-
-.services .services-card img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  border-radius: 10px;
-}
-
-.services .services-card .label-wrapper {
-  margin: 20%;
-}
-
-.services .services-card p {
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.services .services-card .accent-bar {
-  background-color: var(--accent-color);
-  width: 100%;
-  height: 5px;
-  margin: 0 auto;
-}
-
 /* Slogan Section */
 
 .slogan {
@@ -128,6 +89,7 @@ a {
 
 .slogan h1 {
   width: 100%;
+  font-size: 60px;
   margin-right: 5%;
 }
 
@@ -144,8 +106,9 @@ a {
   padding-bottom: 40px;
 }
 
-.reviews h2 {
+.reviews h1 {
   margin-right: 0%;
+  font-size: 60px;
 }
 
 .reviews .carousel {
@@ -339,4 +302,13 @@ a {
 
 .hours h1 {
   font-size: 60px;
+}
+
+/* Media Queries */
+
+/* Slogan Section */
+@media (min-width: 1650px) {
+  .wide-screen-break {
+    display: none;
+  }
 }

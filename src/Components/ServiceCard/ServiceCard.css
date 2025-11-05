@@ -1,0 +1,45 @@
+.services .services-card {
+  margin: 20px;
+  width: 285px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  transition: background-color 500ms, transform 500ms, box-shadow 500ms;
+}
+
+.services .services-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 6px 6px 0 var(--accent-color);
+}
+
+.services .services-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.services .services-card .label-wrapper {
+  margin: 20%;
+}
+
+.services .services-card p {
+  color: #ffffff;
+  margin: 20%;
+}
+
+.services .services-card .accent-bar {
+  background-color: var(--accent-color);
+  width: 60%;
+  height: 5px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+}
