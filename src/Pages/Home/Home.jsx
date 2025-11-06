@@ -2,10 +2,13 @@ import "./Home.css";
 import Banner from "../../Components/Banner/Banner.jsx";
 import Footer from "../../Components/Footer/Footer.jsx";
 import Hero from "../../Components/Hero/Hero.jsx";
+import ServiceCard from "../../Components/ServiceCard/ServiceCard.jsx";
+
 import groupPhoto from "../../assets/Photos/groupPhoto.png";
 import serviceCardImage from "../../assets/Photos/serviceCardImage.jpg";
 import bannerimage from "../../assets/Images/banner-small.jpg";
 import sloganImage from "../../assets/Photos/sloganImage.jpg";
+
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
@@ -128,77 +131,49 @@ function Home() {
         title={false}
         image={groupPhoto}
         enableCTA={true}
-        titleCTA={"Your Recovery, Our Passion"}
+        titleCTA={"Your recovery, our passion"}
         labelCTA={"Family owned and operated"}
-        buttonCTA={"Book an Appointment"}
+        buttonCTA={"Book an appointment"}
       />
       <div className="container">
         <section className="services">
-          <h1>Our Services</h1>
+          <h1>Our services</h1>
           <div className="wrapper">
-            <Link
-              to="/Services"
-              className="services-card"
-              onClick={scrollToTop}
-            >
-              <img src={serviceCardImage} alt="physical therapy image"></img>
-              <div className="label-wrapper">
-                <p>Back & Neck Dysfunction</p>
-                <div className="accent-bar"></div>
-              </div>
-            </Link>
-            <Link
-              to="/Services"
-              className="services-card"
-              onClick={scrollToTop}
-            >
-              <img src={serviceCardImage} alt="physical therapy image"></img>
-              <div className="label-wrapper">
-                <p>Balance Training & Vestibular</p>
-                <div className="accent-bar"></div>
-              </div>
-            </Link>
-            <Link
-              to="/Services"
-              className="services-card"
-              onClick={scrollToTop}
-            >
-              <img src={serviceCardImage} alt="physical therapy image"></img>
-              <div className="label-wrapper">
-                <p>Orthopedic Injury</p>
-                <div className="accent-bar"></div>
-              </div>
-            </Link>
-            <Link
-              to="/Services"
-              className="services-card"
-              onClick={scrollToTop}
-            >
-              <img src={serviceCardImage} alt="physical therapy image"></img>
-              <div className="label-wrapper">
-                <p>Neuromuscular Training</p>
-                <div className="accent-bar"></div>
-              </div>
-            </Link>
+            <ServiceCard
+              image={serviceCardImage}
+              text={"Back & neck dysfunction"}
+            />
+
+            <ServiceCard
+              image={serviceCardImage}
+              text={"Balance training & vestibular"}
+            />
+
+            <ServiceCard image={serviceCardImage} text={"Orthopedic injury"} />
+
+            <ServiceCard
+              image={serviceCardImage}
+              text={"Neuromuscular training"}
+            />
           </div>
           <div id="button-wrapper">
-            <Link
-              to="/Services"
-              onClick={() =>
-                window.scrollTo({ top: 0, left: 0, behavior: "instant" })
-              }
-            >
+            <Link to="/Services" onClick={scrollToTop}>
               <button className="secondaryButton">View all services</button>
             </Link>
           </div>
         </section>
         <section className="slogan">
-          <h1>We help you get back to doing what you love.</h1>
+          <h1>
+            We help you get<br className="wide-screen-break"></br> back to doing
+            <br></br>what you love.
+          </h1>
           <img src={sloganImage}></img>
         </section>
 
         <section className="reviews">
-          <h2>What our patients have to say</h2>
+          <h1>
+            What our patients<br></br> have to say
+          </h1>
           <div className="carousel">
             <div className="quote-wrapper">
               <div className="quote">
@@ -384,13 +359,13 @@ function Home() {
             <div className="hours-accent-bar"></div>
           </div>
           <h1 className="column">
-            Hours of <br></br> Operation
+            Hours of <br></br> operation
           </h1>
         </section>
 
         <Banner
           text={"A team you can trust. A difference you can feel."}
-          btntext={"Contact Us"}
+          btntext={"Contact us"}
           image={bannerimage}
           imgalt={"instructor helping patient"}
         />

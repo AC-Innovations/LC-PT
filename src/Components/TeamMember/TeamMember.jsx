@@ -1,17 +1,17 @@
 import "./TeamMember.css";
 
-function TeamMember(props) {
+function TeamMember({ image, imageAlt, name, position, description }) {
   return (
     <div className="team-member">
-      <img src={props.image} alt={props.imageAlt} />
+      <img src={image} alt={imageAlt} />
       <div className="text-container">
         <div className="label-container">
-          <label>{props.name}</label>
+          <label>{name}</label>
           <div className="highlight"></div>
         </div>
 
-        <p className="position">{props.position}</p>
-        <p className="description">{props.description}</p>
+        <p className="position">{position}</p>
+        <p className="description">{description}</p>
       </div>
     </div>
   );

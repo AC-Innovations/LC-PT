@@ -89,6 +89,11 @@
   margin: auto;
 }
 
+.boxes {
+  padding: 5em;
+}
+
 .boxes img {
-  margin: 5em;
+  width: 100%;
+  height: auto;
 }

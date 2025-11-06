@@ -55,7 +55,7 @@ function About() {
 
         <section className="meet-the-team">
           <div className="title-container">
-            <h2>Meet the Team</h2>
+            <h2>Meet the team</h2>
             <div className="accent-bar"></div>
           </div>
 
@@ -72,21 +72,22 @@ function About() {
               imageAlt="woman posing"
               name="Tami Biery"
               position="Owner, PT"
-              description="Tami has been working with patients for 10 years, receiving her PT license from the University of Delaware"
+              description="Tami has been working with patients for 10 years, receiving her PT license from the University of Delaware."
             />
             <TeamMember
               image={posingWoman2}
               imageAlt="woman posing"
               name="Casi Lastname"
               position="PTA"
-              description="Casi has been working with LC PT for 5 years and is currently working towards a physical therapist degree"
+              description="Casi has been working with LC PT for 5 years and is currently working towards a physical therapist degree."
             />
           </div>
         </section>
         <section className="assistants">
           <div className="assistants-container">
             <h1>
-              And all our <br></br>amazing <br></br>assistants!
+              And all our <br className="wide-screen-break"></br>amazing
+              <br className="wide-screen-break"></br> assistants!
             </h1>
             <div className="image-container">
               <img src={assistants} alt="group photo" />
@@ -96,7 +97,7 @@ function About() {
 
         <Banner
           text={"Let us help you get back to doing what you love."}
-          btntext={"Contact Us"}
+          btntext={"Contact us"}
           image={bannerimage}
           imgalt={"instructor helping patient"}
           enableBackground={true}

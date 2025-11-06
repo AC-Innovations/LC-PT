@@ -147,3 +147,13 @@
 .form-submit .submit-message.active {
   top: -100%;
 }
+
+/* Media Queries */
+
+/* Wide Screen */
+@media (min-width: 1650px) {
+  /* Bring in the margins on the container to make the content feel less separated by an additional 5% */
+  .wide-screen-container {
+    margin: 0 5%;
+  }
+}
